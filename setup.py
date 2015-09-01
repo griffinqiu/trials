@@ -1,7 +1,7 @@
 from setuptools import setup
 from pip.req import parse_requirements
 
-parsed_reqs = parse_requirements('requirements.txt')
+parsed_reqs = parse_requirements('requirements.txt', session = False)
 requirements = [str(x.req) for x in parsed_reqs]
 
 
